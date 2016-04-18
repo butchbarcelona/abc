@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white">
+
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/choice2"
+        android:src="#1b36ea"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:layout_below="@+id/linearLayout"
+        android:layout_toLeftOf="@+id/linearLayout"
+        android:layout_toStartOf="@+id/linearLayout"/>
+
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/choice4"
+        android:src="#468d08"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:layout_alignTop="@+id/choice2"
+        android:layout_toRightOf="@+id/linearLayout"
+        android:layout_toEndOf="@+id/linearLayout"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TAP THE CORRECT COLOR OF THE PICTURE"
+        android:id="@+id/textView"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/linearLayout"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:layout_width="144dp"
+            android:layout_height="144dp"
+            android:id="@+id/img_color"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/lettuce_color"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0/10"
+        android:id="@+id/tv_score"
+        android:textColor="@color/purple"
+        android:textSize="20dp"
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="18dp"
+        android:layout_marginEnd="18dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="COUNTING"
+        android:id="@+id/textView"
+        android:textColor="@android:color/black"
+        android:textSize="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/linearLayout"
+        android:layout_marginBottom="10dp">
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0/10"
+        android:id="@+id/tv_score"
+        android:textColor="@color/purple"
+        android:textSize="20dp"
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="18dp"
+        android:layout_marginEnd="18dp"/>
+
+
+
+    <ImageButton
+        android:layout_height="60dp"
+        android:layout_width="60dp"
+        android:id="@+id/choice2"
+        android:src="@drawable/rect_purple"
+        android:background="@android:color/transparent"
+        android:scaleType="fitEnd"
+        android:layout_alignTop="@+id/choice7"
+        android:layout_toRightOf="@+id/choice4"
+        android:layout_toEndOf="@+id/choice4"/>
+
+    <ImageButton
+        android:scaleType="fitEnd"
+        android:layout_height="60dp"
+        android:layout_width="60dp"
+        android:id="@+id/choice4"
+        android:src="@drawable/rectangle_blue"
+        android:background="@android:color/transparent"
+        android:layout_alignTop="@+id/linearLayout"
+        android:layout_toLeftOf="@+id/textView"
+        android:layout_toStartOf="@+id/textView"/>
+
+    <ImageButton
+        android:scaleType="fitEnd"
+        android:layout_height="60dp"
+        android:layout_width="60dp"
+        android:id="@+id/choice3"
+        android:background="@android:color/transparent"
+        android:src="@drawable/rect_purple"
+        android:layout_above="@+id/tv_choice3"
+        android:layout_toRightOf="@+id/choice1"
+        android:layout_toEndOf="@+id/choice1"/>
+
+
+    <ImageButton
+        android:scaleType="fitEnd"
+        android:layout_height="60dp"
+        android:layout_width="60dp"
+        android:id="@+id/choice5"
+        android:src="@drawable/rect_purple"
+        android:background="@android:color/transparent"
+        android:layout_alignTop="@+id/choice1"
+        android:layout_toRightOf="@+id/choice3"
+        android:layout_toEndOf="@+id/choice3"/>
+
+    <ImageButton
+        android:scaleType="fitEnd"
+        android:layout_height="60dp"
+        android:layout_width="60dp"
+        android:id="@+id/choice1"
+        android:background="@android:color/transparent"
+        android:src="@drawable/rect_purple"
+        android:layout_alignTop="@+id/linearLayout"
+        android:layout_toRightOf="@+id/choice2"
+        android:layout_toEndOf="@+id/choice2"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:id="@+id/tv_choice1"
+        android:textColor="@android:color/black"
+        android:textSize="60dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="26dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/choice2"
+        android:layout_toStartOf="@+id/choice2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:id="@+id/tv_choice2"
+        android:textColor="@android:color/black"
+        android:textSize="60dp"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/tv_choice1"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6"
+        android:id="@+id/tv_choice3"
+        android:textColor="@android:color/black"
+        android:textSize="60dp"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/tv_choice2"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageButton
+        android:layout_height="60dp"
+        android:layout_width="60dp"
+        android:id="@+id/choice7"
+        android:src="@drawable/rect_purple"
+        android:background="@android:color/transparent"
+        android:scaleType="fitEnd"
+        android:layout_alignTop="@+id/choice3"
+        android:layout_toLeftOf="@+id/choice4"
+        android:layout_toStartOf="@+id/choice4"/>
+
+    <ImageButton
+        android:scaleType="fitEnd"
+        android:layout_height="60dp"
+        android:layout_width="60dp"
+        android:id="@+id/choice6"
+        android:src="@drawable/rect_purple"
+        android:background="@android:color/transparent"
+        android:layout_above="@+id/tv_choice2"
+        android:layout_toLeftOf="@+id/tv_score"
+        android:layout_toStartOf="@+id/tv_score"/>
+
+</RelativeLayout>

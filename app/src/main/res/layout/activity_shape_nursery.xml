@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/choice2"
+        android:src="@drawable/rect_purple"
+        android:background="@android:color/transparent"
+        android:scaleType="fitEnd"
+        android:layout_alignTop="@+id/choice3"
+        android:layout_toLeftOf="@+id/linearLayout"
+        android:layout_toStartOf="@+id/linearLayout"/>
+
+    <ImageButton
+        android:scaleType="fitEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/choice4"
+        android:src="@drawable/rectangle_blue"
+        android:background="@android:color/transparent"
+        android:layout_alignTop="@+id/choice2"
+        android:layout_alignRight="@+id/linearLayout"
+        android:layout_alignEnd="@+id/linearLayout"/>
+
+    <ImageButton
+        android:scaleType="fitEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/choice3"
+        android:background="@android:color/transparent"
+        android:src="@drawable/heart_pink"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView"/>
+
+
+    <ImageButton
+        android:scaleType="fitEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/img4"
+        android:src="@drawable/cross_orange"
+        android:background="@android:color/transparent"
+        android:layout_below="@+id/choice4"
+        android:layout_toRightOf="@+id/choice1"
+        android:layout_toEndOf="@+id/choice1"/>
+
+    <ImageButton
+        android:scaleType="fitEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/choice1"
+        android:background="@android:color/transparent"
+        android:src="@drawable/rect_purple"
+        android:layout_below="@+id/choice2"
+        android:layout_toLeftOf="@+id/textView"
+        android:layout_toStartOf="@+id/textView"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="SHAPES"
+        android:id="@+id/textView"
+        android:textColor="@android:color/black"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/linearLayout"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="CHOOSE STAR"
+            android:id="@+id/tv_color"
+            android:textColor="@android:color/black"
+            android:padding="10dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0/10"
+        android:id="@+id/tv_score"
+        android:textColor="@color/purple"
+        android:textSize="20dp"
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="18dp"
+        android:layout_marginEnd="18dp"/>
+
+</RelativeLayout>
